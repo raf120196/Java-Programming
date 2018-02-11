@@ -9,11 +9,11 @@ import com.epam.renat_farakhutdinov.java.lesson1.task3.TaskThree;
  */
 public class Solution {
     public static void main(String[] args) {
-//        Task task1 = new TaskOne();
-//        task1.startTask();
-//
-//        Task task2 = new TaskTwo();
-//        task2.startTask();
+        Task task1 = new TaskOne();
+        task1.startTask();
+
+        Task task2 = new TaskTwo();
+        task2.startTask();
 
         Task task3 = new TaskThree();
         task3.startTask();
