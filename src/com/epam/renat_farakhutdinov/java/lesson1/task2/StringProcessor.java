@@ -9,8 +9,7 @@ public class StringProcessor {
     private static Scanner in = new Scanner(System.in);
 
     public static void getShortestAndLongestStringInList() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         System.out.println(String.format("Enter %d strings:", n));
         in.nextLine();
@@ -36,8 +35,7 @@ public class StringProcessor {
     }
 
     public static void getStringWithLengthMoreAverage() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         List<String> strings = new ArrayList<>();
         double averageLength = 0.0;
@@ -62,8 +60,7 @@ public class StringProcessor {
     }
 
     public static void getStringWithLengthLessAverage() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         List<String> strings = new ArrayList<>();
         double averageLength = 0.0;
@@ -88,8 +85,7 @@ public class StringProcessor {
     }
 
     public static void getWordWithMinimalDifferentSymbols() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         System.out.println(String.format("Enter %d words:", n));
         String answer = in.next();
@@ -106,8 +102,7 @@ public class StringProcessor {
     }
 
     public static void getWordWithoutRepetitiveSymbols() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         String answer = null;
 
@@ -130,8 +125,7 @@ public class StringProcessor {
     }
 
     public static void getWordThatContainsOnlyDigits() {
-        System.out.print("Enter n: ");
-        int n = in.nextInt();
+        int n = getN();
 
         String answer = null;
         int count = 0;
@@ -177,5 +171,10 @@ public class StringProcessor {
         }
 
         return true;
+    }
+
+    private static int getN() {
+        System.out.print("Enter n: ");
+        return in.nextInt();
     }
 }
